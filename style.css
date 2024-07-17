@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* background-image: url("https://codzsword.github.io/bootstrap-sidebar/background-image.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 1.2375rem;
+    color: #FFF;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Layout skeleton */
+
+.wrapper {
+   
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    background-color: black;
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1111;
+}
+
+/* Sidebar collapse */
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.main .search{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+.main .search i{
+    margin-right: 14px;
+}
+.main.search input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.main .profile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    left: 400PX;
+}
+
+.main .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+ .main .profile img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius:50% ; */
+}
+.card-body{
+    /* height: 300px; */
+} */
+.order{
+    background-color: blue;
+    color: black;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
+left: 150px;
+border-radius: 50%;
+
+    
+
+}
+.order img{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    color: black;
+   
+}
+
+
+
+.img-girl{
+   
+}
+#girl{
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 30px;
+   
+}
+#view{
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+}
+
+
+.content {
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+
+
+}
+.card-header ul li {
+    align-items: center;
+width: 70px;
+height: 30px;
+border-radius: 10px;
+}
+
+.card-header ul li{
+    
+margin-left:  70px;
+}
+
+.card-header ul li:hover{
+    background-color: blue;
+}
+
+
+/* Responsive */
+
+@media (min-width:768px) {
+    .content {
+        width: auto;
+    }
+}
